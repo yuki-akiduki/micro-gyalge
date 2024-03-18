@@ -7,7 +7,7 @@ export default function Home({blog}) {
   return (
     <main>
       {blog.map((blog) => (
-        <p><a href={`/blog/${blog.id}`}>{blog.title}</a></p>
+        <p key={blog.id}><a href={`/blog/${blog.id}`}>{blog.title}</a></p>
       ))}
     </main>
   );
